@@ -1,2 +1,2 @@
 # OnlineShopping
-Online Shopping website created by HTML,CSS, JavaScript
+Online Shopping website created by HTML,CSS and JavaScript
