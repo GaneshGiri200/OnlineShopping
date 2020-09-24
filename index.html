@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Shopping Home Page</title>
+        <link rel="stylesheet" href="Style.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="sitename"> <h1>Online Shopping</h1></div>
+            <div class="search">
+                <input type="search" onkeyup="searchProduct(this.value)" placeholder="Search for products">
+            </div>
+            <div class="cartcount" id="cartcount"><h2>0</h2></div>
+            <div class="cartlogo">
+                <img src="Product Images/CartLogo.png" width="50px" height="50px"/>
+            </div>
+        </div>
+        <div class="filter">
+            <center>
+                <input type="number" placeholder="Minimum Price" id="minprice">
+                <input type="number" placeholder="MaximumPrice" id="maxprice">
+                <button onclick="filterByPrice()">Filter</button>
+            </center>
+        </div>
+        <div class="products">
+            <div class="productwrapper" id="productwrapper">
+            </div>
+        </div>
+
+        <div class="products">
+            <center>
+                <h1 style="background-color: white; width: 200px; border-radius: 10px;"> Cart Items
+                </h1>
+            </center>
+            <div class="productwrapper" id="cart">
+            </div>
+        </div>
+        <script src="Shopping.js" type="text/javascript"></script>
+    </body>
+</html>
